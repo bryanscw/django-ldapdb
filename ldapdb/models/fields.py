@@ -7,6 +7,8 @@ import re
 
 from django.db.models import fields, lookups
 from django.utils import timezone
+from pytz import utc
+timezone.utc = utc
 
 
 class LdapLookup(lookups.Lookup):
